@@ -3,6 +3,9 @@ using namespace std;
 
 int main()
 {
-    cout<<"This is my first string code";
+    int x;
+    cin>>x;
+    cout<<x<<"\n";
+    cout<<"This is my first string code\n";
     return 0;
 }
