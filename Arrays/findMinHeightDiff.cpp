@@ -1,39 +1,20 @@
-// { Driver Code Starts
-// Initial template for C++
-
 #include <bits/stdc++.h>
 using namespace std;
-
- // } Driver Code Ends
-// User function template for C++
-
 class Solution {
   public:
     int getMinDiff(int arr[], int n, int k) {
-        vector<int> vect;
-        for(int i = 0; i < n; i++)
+        sort(arr, arr + n);
+        int res = arr[n-1] - arr[0];
+        for(int i = 0; i < n - 1; i++)
         {
-            int max = arr[i] + k;
-            int min = arr[i] - k;
-            if(min >= 0)
-                vect.push_back(min);
-            vect.push_back(max);
+            int j = i + 1;
+            int high = max((arr[n-1] - k), (arr[i] + k));
+            int low = min((arr[0] + k), (arr[j] - k));
+            res = min(res, high - low);
         }
-        sort(vect.begin(), vect.end());
-        int ans = INT_MAX;
-        cout<<endl;
-        for(int i = 0; i < vect.size() - n; i++)
-        {
-            int diff = vect[i + n] - vect[i];
-            cout<<diff<<" ";
-            if(diff < ans)
-                ans = diff;
-        }
-        return ans;
+        return res;
     }
 };
-
-// { Driver Code Starts.
 int main() {
     int t;
     cin >> t;
@@ -50,4 +31,4 @@ int main() {
         cout << ans << "\n";
     }
     return 0;
-}  // } Driver Code Ends
+} 
