@@ -3,7 +3,7 @@ using namespace std;
 class Solution{
     public:
     int maxSubarraySum(int arr[], int n){
-        int currSum = 0, maxSum = 0;
+        int currSum = 0, maxSum = INT_MIN;//INT_MIN is for all negative numbers
         for(int i = 0; i < n; i++)
         {
             currSum += arr[i];
