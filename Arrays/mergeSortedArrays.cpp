@@ -1,3 +1,4 @@
+//solution to leetcode problem
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
@@ -14,4 +15,21 @@ public:
             nums1[ptr--] = nums2[ptr2--];   
         }
     }
+};
+//second solution (gfg problem)
+class Solution{
+    public:
+        
+        void merge(long long arr1[], long long arr2[], int n, int m) 
+        { 
+            int j = 0;
+            for(int i = 0; i < n; i++)
+            {
+                if(arr1[i] > arr2[j])
+                {
+                    swap(arr1[i], arr2[j]);
+                    sort(arr2, arr2 + m);
+                }
+            }
+        } 
 };
