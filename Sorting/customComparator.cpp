@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int cmp(pair<int,  int> a, pair<int, int> b)
+bool cmp(pair<int, int> a, pair<int, int> b)
 {
-    if(a.first != b.first)
-        return a.first > b.first;//decreasing order
-    return a.second < b.second;//increasing order
+    if(a.second != b.second)
+        return a.second < b.second;
+    return a.first < b.first;
 }
 //keep in mind, jis order mai chahiye vahi return karo!!
 int main()
