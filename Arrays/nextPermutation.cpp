@@ -19,6 +19,5 @@ public:
             }
         }
         reverse(nums.begin() + inversePtr + 1, nums.end());
-        
     }
 };
