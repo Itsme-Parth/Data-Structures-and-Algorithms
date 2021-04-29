@@ -38,7 +38,7 @@ int midIndex(int arr[], int n)
 int main()
 {
     int num = 5;
-    int arr[] = {7, 8, 11, 2, 5, 6};
+    int arr[] = {6, 7, 7, 8, 11, 2, 5};
     int n = sizeof(arr) / sizeof(int);
     int mid = midIndex(arr, n);
     int one = binSearch(arr, n, 0, mid - 1, num);
@@ -47,7 +47,7 @@ int main()
         cout<<two;
     else if(two == -1)
         cout<<one;
-    else(one == -1 && two == -1)
+    else if(one == -1 && two == -1)
         cout<<-1; 
     return 0;
 }
