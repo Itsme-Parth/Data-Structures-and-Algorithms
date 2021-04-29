@@ -7,9 +7,9 @@ Also this solution does not consider repetitions
 using namespace std;
 int countRotations(int arr[], int n)
 {
-    int start = 0, end = n - 1, count = 0;
+    int start = 0, end = n - 1;
     if (arr[start] <= arr[end])
-        return count;
+        return 0;
     while (start <= end)
     {
         if (arr[start] <= arr[end])
