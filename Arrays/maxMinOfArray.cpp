@@ -8,12 +8,14 @@ struct myStruc
 struct myStruc func(int arr[], int low, int high)
 {
     struct myStruc minMax, a1, a2;
+    //just 1 element
     if (low == high)
     {
         minMax.min = arr[low];
         minMax.max = arr[high];
         return minMax;
     }
+    //two elements
     if (low == high + 1)
     {
         if (arr[low] < arr[high])
@@ -26,6 +28,7 @@ struct myStruc func(int arr[], int low, int high)
             minMax.max = arr[low];
         return minMax;
     }
+    //else 
     int mid = (low + high) / 2;
     a1 = func(arr, 0, mid);
     a2 = func(arr, mid + 1, high);
