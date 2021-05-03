@@ -22,9 +22,9 @@ int countRotations(int arr[], int n)
         int prev = (mid + n - 1) % n; //for the first index
         if (arr[mid] <= arr[prev] && arr[mid] <= arr[next])
             return mid;
-        else if (arr[start] <= arr[mid])
+        else if (arr[start] <= arr[mid])//here it means that this part is sorted check for the other one
             start = mid + 1;
-        else if (arr[mid] <= arr[end])
+        else if (arr[mid] <= arr[end])//similarly here as well
             end = mid - 1;
     }
 }

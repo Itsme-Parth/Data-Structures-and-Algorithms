@@ -10,7 +10,7 @@ int binSearch(int arr[], int n, int num)
         {
             return mid;
         }
-        else if (num == arr[mid - 1] && mid - 1 >= start)
+        else if (num == arr[mid - 1] && mid - 1 >= start)//checking the out of bound conditions as well
             return mid - 1;
         else if (num == arr[mid + 1] && mid + 1 <= end)
             return mid + 1;
