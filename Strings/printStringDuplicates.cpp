@@ -1,4 +1,4 @@
-/* string duplicates */
+//string duplicates
 #include <bits/stdc++.h>
 using namespace std;
 
