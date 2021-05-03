@@ -1,3 +1,4 @@
+/* Find the missing and the repeating element in an array*/
 #include <bits/stdc++.h>
 using namespace std;
 class Solution{
