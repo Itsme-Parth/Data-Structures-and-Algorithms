@@ -1,3 +1,4 @@
+/* string rotation */
 #include <bits/stdc++.h>
 using namespace std;
 bool isRotation(string str1, string str2)
