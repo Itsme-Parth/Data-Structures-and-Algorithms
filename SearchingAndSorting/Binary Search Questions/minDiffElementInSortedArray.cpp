@@ -1,4 +1,4 @@
-/*One of the two approaches */
+/* One of the two approaches */
 //Second approach can be to find the ceil and floor value and then find the min difference
 #include <bits/stdc++.h>
 using namespace std;
