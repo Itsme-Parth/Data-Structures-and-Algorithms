@@ -14,6 +14,7 @@ int binSearch(int arr[], int n, int num)
         else
             start = mid + 1;
     }
+    //The start and end pointer always points to the elements neighbour to the element not found!!
     if (abs(arr[end] - num) < abs(arr[start] - num))
         return arr[end];
     else
