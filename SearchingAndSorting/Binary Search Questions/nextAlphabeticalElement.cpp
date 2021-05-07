@@ -1,3 +1,4 @@
+//Next alphabetical element in the array
 #include <bits/stdc++.h>
 using namespace std;
 char binSearch(char arr[], int n, char ch)
