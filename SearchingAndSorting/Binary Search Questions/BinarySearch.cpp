@@ -1,3 +1,4 @@
+//Binary Search implementation
 #include <bits/stdc++.h>
 using namespace std;
 int binSearch(int arr[], int n, int num)
