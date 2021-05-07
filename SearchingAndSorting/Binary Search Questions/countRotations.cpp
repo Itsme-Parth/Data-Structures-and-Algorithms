@@ -1,7 +1,7 @@
 /* 
 This implementation is for right side rotated array where we return mid 
 whereas in left side rotated array we return (n - mid)%n 
-Also this solution does not consider repetitions
+Also this solution does not consider repetitions.
 */
 #include <bits/stdc++.h>
 using namespace std;
