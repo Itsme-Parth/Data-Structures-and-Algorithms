@@ -24,7 +24,7 @@ int countRotations(int arr[], int n)
             return mid;
         else if (arr[start] <= arr[mid])//here it means that this part is sorted check for the other one
             start = mid + 1;
-        else if (arr[mid] <= arr[end])//similarly here as well
+        else if (arr[mid] <= arr[end])//similarly here as well.
             end = mid - 1;
     }
 }
