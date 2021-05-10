@@ -15,10 +15,12 @@ void insertNode(int val)
     node *temp;
     temp->data = val;
     temp->next = head;
+    head = temp;
 }
 //Printing the Linked List
 void printLinkedList()
 {
+    
 }
 //Deleting a node in the Linked List
 void deleteNode()
