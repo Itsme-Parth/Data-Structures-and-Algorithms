@@ -9,10 +9,10 @@ void reverse()
 {
 
 }
-//inserting node from the back 
+//inserting node from the end 
 void insertNode()
 {
-
+    
 }
 void printLinkedList()
 {
