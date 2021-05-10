@@ -20,7 +20,12 @@ void insertNode(int val)
 //Printing the Linked List
 void printLinkedList()
 {
-    
+    node *temp = head;
+    while (temp != NULL)
+    {
+        cout << temp->data;
+        temp = temp->next;
+    }
 }
 //Deleting a node in the Linked List
 void deleteNode()
