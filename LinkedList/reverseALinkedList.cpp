@@ -60,8 +60,8 @@ int main()
 {
     insertNode(5);//list --> 5
     insertNode(4);//list --> 4 5
-    insertNode(3);
-    insertNode(2);
+    insertNode(3);//list --> 3 4 5
+    insertNode(2);//list --> 2 3 4 5
     insertNode(1);
     insertNode(0);
     printLinkedList();
