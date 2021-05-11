@@ -59,7 +59,7 @@ void deleteNode(int n)
 int main()
 {
     insertNode(5);//list --> 5
-    insertNode(4);
+    insertNode(4);//list --> 4 5
     insertNode(3);
     insertNode(2);
     insertNode(1);
