@@ -1,5 +1,5 @@
 //Function to reverse a linkedlist using recursion
-void reverse()
+void reverse(node *p)
 {
     if (p == NULL)
     {
