@@ -14,6 +14,7 @@
         "regex": "cpp",
         "valarray": "cpp",
         "type_traits": "cpp",
-        "complex": "cpp"
+        "complex": "cpp",
+        "*.tcc": "cpp"
     },
 }
