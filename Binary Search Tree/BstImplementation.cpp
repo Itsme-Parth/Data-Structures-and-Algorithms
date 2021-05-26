@@ -15,6 +15,7 @@ BstNode *getNewNode(int data)
     return newNode;
 }
 //inserting values in the tree
+//Time Complexity = O(N^2)
 BstNode *BstInsertNode(BstNode *root, int data)
 {
     if (root == NULL)
@@ -46,8 +47,8 @@ bool search(BstNode *root, int data)
 int main()
 {
     BstNode *root = NULL;
-    root = BstInsertNode(root, 5);
-    root = BstInsertNode(root, 15);
+    root = BstInsertNode(root, 5);  //we are changing the value of root according to what the function returns
+    root = BstInsertNode(root, 15); //We can also use & to change the values through pointer
     root = BstInsertNode(root, 2);
     root = BstInsertNode(root, 25);
     root = BstInsertNode(root, 6);
