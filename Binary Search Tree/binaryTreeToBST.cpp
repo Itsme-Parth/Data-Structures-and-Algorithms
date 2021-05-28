@@ -1,6 +1,3 @@
-// { Driver Code Starts
-//Initial template for C++
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -92,10 +89,6 @@ Node *buildTree(string str)
     }
     return root;
 }
-
-// } Driver Code Ends
-//User function template for C++
-
 /* The Node structure is
 struct Node
 {
@@ -138,10 +131,10 @@ public:
         retreive(root, storeVal);
         sort(storeVal.begin(), storeVal.end());
         constructBST(root, storeVal, index);
+        return root;
     }
 };
 
-// { Driver Code Starts.
 int main()
 {
     int t;
@@ -158,4 +151,3 @@ int main()
     }
     return 0;
 }
-// } Driver Code Ends

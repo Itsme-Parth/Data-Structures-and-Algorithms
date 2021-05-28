@@ -5,6 +5,7 @@ struct Node
     Node *left;
     Node *right;
 };
+//using the min max relation to check if a tree is a binary tree
 bool isBSTUtil(Node *root, int minVal, int maxVal)
 {
     if (root == NULL)
