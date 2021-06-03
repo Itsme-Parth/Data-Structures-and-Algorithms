@@ -39,13 +39,13 @@ public:
             return NULL; //case 0, if the tree is empty
         if (root->data == n1 || root->data == n2)
             return root; //case 1, 2
-        Node *leftNode = lca(root->left, n1, n2);
-        Node *rightNode = lca(root->right, n1, n2);
-        if (leftNode && rightNode)
+        Node *left = lca(root->left, n1, n2);
+        Node *right = lca(root->right, n1, n2);
+        if (left && right)
             return root; //case 3
-        if (leftNode)
+        if (left)
             return left; //case 4
-        if (rightNode)
+        if (right)
             return right; //case 5
         return NULL;
     }
