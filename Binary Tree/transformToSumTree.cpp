@@ -7,8 +7,11 @@ public:
     {
         if (!root)
             return 0;
-        if (!root->left && !root->right)
-            return
+        int leftSum = sumTree(root->left);
+        int rightSum = sumTree(root->right);
+        int value = root->data + leftSum + rightSum; //calculation value before changing the root -> data
+        root->data = leftSum + rightSum;             //updating the value later after storing it in value
+        return value;                                //returning value which would change the data of the node
     }
     void toSumTree(Node *node)
     {
