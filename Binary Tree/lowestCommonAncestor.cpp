@@ -1,4 +1,5 @@
 /*
+Find the lowest common ancestor of two given nodes
                 CASE - 1
             n1 = 2 , n2 =  2
                   1
