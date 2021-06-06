@@ -1,3 +1,4 @@
+//Code to remove the loop from the linked list
 //This implementation includes counting the number of nodes to find the starting point
 #include <bits/stdc++.h>
 using namespace std;
