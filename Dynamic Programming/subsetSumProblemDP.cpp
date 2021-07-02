@@ -16,7 +16,7 @@ bool isSubsetSum(int arr[], int n, int sum)
             }
         }
     }
-    for (int i = 1; i < n + 1; i++) //why not starting i with 0?
+    for (int i = 1; i < n + 1; i++) //starting with 1 as we've already filled the base conditions
     {
         for (int j = 1; j < sum + 1; j++)
         {
