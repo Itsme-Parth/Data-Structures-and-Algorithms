@@ -18,7 +18,7 @@ public:
         {
             for (int j = 1; j < w + 1; j++)
             {
-                if (wt[i - 1] <= j) //i instead of n
+                if (wt[i - 1] <= j) //i instead of n {i represents the size and j represents the weight}
                 {
                     //the difference in unbounded lies in line 25 as we can take an item which has already been
                     // taken before [i - 1] turns to [i]
