@@ -1,7 +1,7 @@
 class Solution
 {
 public:
-    int dp[101][101]; //kkey trick for memoisation is to add dp as global variable
+    int dp[101][101]; //key trick for memoisation is to add dp as global variable
     int solve(int arr[], int i, int j)
     {
         if (i >= j)
