@@ -8,7 +8,7 @@ public:
         vector<int> vis(V, 0); //visited vector with all nodes initialised to 0
         queue<int> q;          //queue to help bfs implementation
         q.push(0);             //pushing the first node
-        vis[0] = 1;
+        vis[0] = 1;            // agar yeh nahi karoge toh queue toh empty ho jayegi na
         while (!q.empty())
         {
             int node = q.front(); //select the top node
