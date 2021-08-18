@@ -18,7 +18,7 @@ public:
     vector<int> dfsOfGraph(int V, vector<int> adj[])
     {
         vector<int> storeDfs;
-        vector<int> vis(V + 1, 0);
+        vector<int> vis(V, 0);
         for (int i = 0; i < V; i++) //in case of 0 based indexing we run from 0 to v - 1
         {
             if (!vis[i])
