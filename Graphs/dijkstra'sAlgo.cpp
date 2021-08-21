@@ -5,27 +5,29 @@ public:
     //from the source vertex S.
     vector<int> dijkstra(int n, vector<vector<int>> g[], int source)
     {
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq; // min-heap ; In pair => (dist,from)
-        vector<int> distTo(n, INT_MAX);                                                     // 1-indexed array for calculating shortest paths;
+        // min-heap ; In pair => (dist,from)
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+        vector<int> distTo(n + 1, INT_MAX); // 1-indexed array for calculating shortest paths;
 
-        distTo[source] = 0;
+        distTo[source] = 0;            //marking source distance as zero
         pq.push(make_pair(0, source)); // (dist,from)
 
         while (!pq.empty())
         {
-            int dist = pq.top().first;
-            int prev = pq.top().second;
+            int currDist = pq.top().first;
+            int prevNode = pq.top().second;
             pq.pop();
 
             vector<pair<int, int>>::iterator it;
-            for (it = g[prev].begin(); it != g[prev].end(); it++)
+            for (it = g[prevNode].begin(); it != g[prevNode].end(); it++)
             {
+                //here we are iterating in the adjacency list comprised of (node, wt)
                 int next = it->first;
-                int nextDist = it->second;
-                if (distTo[next] > distTo[prev] + nextDist)
+                int nextWeight = it->second;
+                if (distTo[next] > distTo[prev] + nextWeight)
                 {
-                    distTo[next] = distTo[prev] + nextDist;
-                    pq.push(make_pair(distTo[next], next));
+                    distTo[next] = distTo[prev] + nextWeight; //updating the distance
+                    pq.push(make_pair(distTo[next], next));   //if we find a new shorter distance we push it in the pq
                 }
             }
         }
