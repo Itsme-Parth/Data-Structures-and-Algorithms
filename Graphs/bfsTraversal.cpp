@@ -18,8 +18,8 @@ public:
             {
                 if (!vis[itr]) //add in the queue if not visited
                 {
-                    q.push(itr);
-                    vis[itr] = 1;
+                    q.push(itr);  //queue mai daalo so that inke bhi adjacent check ho ske
+                    vis[itr] = 1; //mark it as visited
                 }
             }
         }
