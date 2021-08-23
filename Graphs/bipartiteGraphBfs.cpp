@@ -14,7 +14,7 @@ public:
             {
                 if (color[itr] == -1) //if not visited hence color[i] == -1
                 {
-                    color[itr] = 1 - color[node];
+                    color[itr] = 1 - color[node]; //setting alternate color
                     q.push(itr);
                 }
                 else if (color[itr] == color[node]) //if already visited in case of cycle check if color same to the adjacent element
