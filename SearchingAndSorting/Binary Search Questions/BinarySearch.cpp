@@ -4,22 +4,22 @@ using namespace std;
 int binSearch(int arr[], int n, int num)
 {
     int start = 0, end = n - 1;
-    while(start <= end)
+    while (start <= end)
     {
-        int mid = start + (end - start)/2;
-        if(arr[mid] == num)
+        int mid = start + (end - start) / 2;
+        if (num == arr[mid])
             return mid;
-        else if(arr[mid] > num)
+        else if (arr[mid] > num)
             end = mid - 1;
-        else 
+        else if (arr[mid] < num)
             start = mid + 1;
     }
     return -1;
 }
 int main()
 {
-    int arr[] = {1,2,3,4,5,6,7,8,9,10};
-    int n = sizeof(arr)/sizeof(int);
-    cout<<binSearch(arr, n, 11);
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int n = sizeof(arr) / sizeof(int);
+    cout << binSearch(arr, n, 11);
     return 0;
 }
