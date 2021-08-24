@@ -18,15 +18,16 @@ int countRotations(int arr[], int n)
         }
         int mid = start + (end - start) / 2;
         //writing circular array type implementation
-        int next = (mid + n) % n;     //for the last index
-        int prev = (mid + n - 1) % n; //for the first index
-        if (arr[mid] <= arr[prev] && arr[mid] <= arr[next])
+        int next = (mid + n) % n;                           //for the last index
+        int prev = (mid + n - 1) % n;                       //for the first index
+        if (arr[mid] <= arr[prev] && arr[mid] <= arr[next]) //condition for min element
             return mid;
-        else if (arr[start] <= arr[mid])//here it means that this part is sorted check for the other one
+        else if (arr[start] <= arr[mid]) //here it means that this part is sorted check for the other one
             start = mid + 1;
-        else if (arr[mid] <= arr[end])//similarly here as well.
+        else if (arr[mid] <= arr[end]) //similarly here as well.
             end = mid - 1;
     }
+    return -1;
 }
 int main()
 {
