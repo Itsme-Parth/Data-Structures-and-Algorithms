@@ -54,6 +54,6 @@ int main()
     if (firstOccurrence == -1 && lastOccurrence == -1)
         cout << 0;
     else
-        cout << lastOccurrence - firstOccurrence + 1;
+        cout << lastOccurrence - firstOccurrence + 1; //adding one as we have zero based indexing
     return 0;
 }
