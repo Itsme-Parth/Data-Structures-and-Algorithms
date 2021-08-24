@@ -19,7 +19,7 @@ public:
             for (int j = 1; j < V + 1; j++)
             {
                 if (coins[i - 1] <= j)
-                    dp[i][j] = min(dp[i][j - coins[i - 1]] + 1, dp[i - 1][j]);
+                    dp[i][j] = min(dp[i][j - coins[i - 1]] + 1, dp[i - 1][j]); //+1 is added to min number of coins
                 else
                     dp[i][j] = dp[i - 1][j];
             }
