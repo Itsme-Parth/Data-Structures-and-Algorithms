@@ -11,12 +11,12 @@ int binSearch(int arr[], int n, int num)
         {
             return mid;
         }
-        else if (num == arr[mid - 1] && mid - 1 >= start)//checking the out of bound conditions as well
+        else if (num == arr[mid - 1] && mid - 1 >= start) //checking the out of bound conditions as well
             return mid - 1;
         else if (num == arr[mid + 1] && mid + 1 <= end)
             return mid + 1;
         else if (num > arr[mid])
-            start = mid + 2;
+            start = mid + 2; //as immediate wala toh check kar hi rahe hai hum
         else if (num < arr[mid])
             end = mid - 2;
     }
