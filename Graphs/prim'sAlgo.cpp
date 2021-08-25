@@ -47,6 +47,7 @@ int main()
         {
             int node = itr.first;
             int weight = itr.second;
+            //updating only if it doesn't exist in the mst and new weight is lesser than the previous weight
             if (mst[node] = false && weight < key[itr])
             {
                 parent[v] = u;   //updating the parent with the min node found above
