@@ -18,6 +18,8 @@ void findPar(int node)
     }
 
     /* return findPar(parent[node]); otherwise lets go around and find the parent */
+    //aur agar node == parent[node] nahi hai toh tum current parent ke parents mai check karoge
+    //hence findPar(parent[node])
     return parent[node] = findPar(parent[node]); //Path Compression as storing the super parent directly
 }
 
