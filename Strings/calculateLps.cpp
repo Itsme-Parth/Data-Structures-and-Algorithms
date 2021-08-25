@@ -1,22 +1,22 @@
 class Solution
 {
-    void calculateRes(string s, int length, vector<int> &res)
+    void calculateRes(string s, int length, vector<int> &lps)
     {
         int len = 0;
-        res[len] = 0;
+        lps[len] = 0;
         int i = 1;
         while (i < length)
         {
             if (s[i] == s[len])
             {
                 len++;
-                res[i] = len;
+                lps[i] = len;
                 i++;
             }
             else //if s[i] != s[len]
             {
                 if (len != 0) //if len != 0 Consider case AAACAAAA
-                    len = res[len - 1];
+                    len = lps[len - 1];
                 else
                 {
                     res[i] = 0;
