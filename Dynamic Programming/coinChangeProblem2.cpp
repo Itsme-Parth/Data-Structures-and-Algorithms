@@ -12,7 +12,7 @@ public:
         }
         for (int j = 0; j < V + 1; j++)
         {
-            dp[0][j] = INT_MAX - 1;
+            dp[0][j] = INT_MAX - 1; //available coins 0 hai and sum bnana hai 1 badi ajeeb si problem hui yeh toh
         }
         for (int i = 1; i < M + 1; i++)
         {
