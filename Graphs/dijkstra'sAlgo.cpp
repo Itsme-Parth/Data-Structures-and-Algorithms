@@ -24,7 +24,7 @@ public:
                 //here we are iterating in the adjacency list comprised of (node, wt)
                 int next = it->first;
                 int nextWeight = it->second;
-                if (distTo[next] > distTo[prev] + nextWeight)
+                if (distTo[prevNode] + nextWeight < distTo[next])
                 {
                     distTo[next] = distTo[prev] + nextWeight; //updating the distance
                     pq.push(make_pair(distTo[next], next));   //if we find a new shorter distance we push it in the pq
