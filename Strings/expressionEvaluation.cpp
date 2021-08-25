@@ -12,7 +12,7 @@ public:
             char c = s[i];
             if (c >= '0' && c <= '9')
             {
-                num = 10 * num + c - '0'; /// For case: "23"
+                num = num * 10 + (c - '0'); /// For case: "23"
             }
             else if (c == '+')
             {
